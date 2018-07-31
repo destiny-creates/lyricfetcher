@@ -9,7 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var artistNameTextField: UIView!
+    
+    @IBOutlet weak var artistSongTextField:UITextField!
+    
+    @IBOutlet weak var lyricsTextView: UITextView!
+ 
+    let baseURL = "https://api.lyrics.ovh/v1/"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
