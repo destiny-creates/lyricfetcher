@@ -45,11 +45,22 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMC-l7-art">
+                                <rect key="frame" x="79" y="206" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.26082590500000002" green="0.91912359249999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4Y-SU-TRq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.26082590497570024" green="0.91912359250182707" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="mwk-td-lSK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5gp-Yx-Prz"/>
                             <constraint firstItem="fE7-6M-dv9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6jx-Rv-254"/>
+                            <constraint firstItem="cXs-AT-NzC" firstAttribute="top" secondItem="XMC-l7-art" secondAttribute="bottom" constant="46" id="9BV-Ou-2O6"/>
                             <constraint firstItem="fE7-6M-dv9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="Cg8-eR-A2U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fE7-6M-dv9" secondAttribute="trailing" constant="16" id="L17-kf-wiC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Q9-pS-Gjc" secondAttribute="trailing" constant="16" id="LaH-da-UJm"/>
@@ -61,12 +72,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mwk-td-lSK" secondAttribute="trailing" constant="16" id="bl8-L5-Z8k"/>
                             <constraint firstItem="cXs-AT-NzC" firstAttribute="top" secondItem="mwk-td-lSK" secondAttribute="bottom" constant="104" id="gtd-PL-YhI"/>
                             <constraint firstItem="cXs-AT-NzC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hlR-en-07d"/>
+                            <constraint firstItem="XMC-l7-art" firstAttribute="top" secondItem="mwk-td-lSK" secondAttribute="bottom" constant="28" id="oBV-mC-ozF"/>
                             <constraint firstItem="cXs-AT-NzC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="siL-yw-ivI"/>
+                            <constraint firstItem="XMC-l7-art" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="yFq-LH-qm0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="artistNameTextField" destination="8bC-Xf-vdC" id="Jko-j5-Xtw"/>
+                        <outlet property="artistNameTextField" destination="5Q9-pS-Gjc" id="UQJ-Vu-vfv"/>
                         <outlet property="artistSongTextField" destination="mwk-td-lSK" id="xon-hx-CmT"/>
                         <outlet property="lyricsTextView" destination="cXs-AT-NzC" id="AN3-ED-FBd"/>
                     </connections>

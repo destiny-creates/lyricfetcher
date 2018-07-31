@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63259DCE8313FBCF700529E0 /* Pods_lyricsfecher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F443D59E02D7C8D10293E60 /* Pods_lyricsfecher.framework */; };
 		7E6E02172110A8F900277D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E02162110A8F900277D56 /* AppDelegate.swift */; };
 		7E6E02192110A8F900277D56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E02182110A8F900277D56 /* ViewController.swift */; };
 		7E6E021C2110A8F900277D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6E021A2110A8F900277D56 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7818AF31B4DAE36E62F26192 /* Pods-lyricsfecher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lyricsfecher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lyricsfecher/Pods-lyricsfecher.debug.xcconfig"; sourceTree = "<group>"; };
 		7E6E02132110A8F900277D56 /* lyricsfecher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lyricsfecher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6E02162110A8F900277D56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6E02182110A8F900277D56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		7E6E021D2110A8FB00277D56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E6E02202110A8FB00277D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E6E02222110A8FB00277D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F443D59E02D7C8D10293E60 /* Pods_lyricsfecher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lyricsfecher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96DC90A148F3D422A9049BEB /* Pods-lyricsfecher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lyricsfecher.release.xcconfig"; path = "Pods/Target Support Files/Pods-lyricsfecher/Pods-lyricsfecher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63259DCE8313FBCF700529E0 /* Pods_lyricsfecher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				7E6E02152110A8F900277D56 /* lyricsfecher */,
 				7E6E02142110A8F900277D56 /* Products */,
+				C1338B9BF3B723FC99E3A0F2 /* Pods */,
+				E8FFC71F56E11DBFCBEF8216 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = lyricsfecher;
 			sourceTree = "<group>";
 		};
+		C1338B9BF3B723FC99E3A0F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7818AF31B4DAE36E62F26192 /* Pods-lyricsfecher.debug.xcconfig */,
+				96DC90A148F3D422A9049BEB /* Pods-lyricsfecher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8FFC71F56E11DBFCBEF8216 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F443D59E02D7C8D10293E60 /* Pods_lyricsfecher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E6E02252110A8FB00277D56 /* Build configuration list for PBXNativeTarget "lyricsfecher" */;
 			buildPhases = (
+				6501A4ABC391604E7D91DB56 /* [CP] Check Pods Manifest.lock */,
 				7E6E020F2110A8F900277D56 /* Sources */,
 				7E6E02102110A8F900277D56 /* Frameworks */,
 				7E6E02112110A8F900277D56 /* Resources */,
+				8FF006D80DBF08ECD6821FFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6501A4ABC391604E7D91DB56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lyricsfecher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FF006D80DBF08ECD6821FFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-lyricsfecher/Pods-lyricsfecher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lyricsfecher/Pods-lyricsfecher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E6E020F2110A8F900277D56 /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		7E6E02262110A8FB00277D56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7818AF31B4DAE36E62F26192 /* Pods-lyricsfecher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +365,7 @@
 		};
 		7E6E02272110A8FB00277D56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96DC90A148F3D422A9049BEB /* Pods-lyricsfecher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
